@@ -1,5 +1,4 @@
 lines = open("input.txt", "r").readlines()
-# lines = ['30373', '25512', '65332', '33549', '35390']
 
 def check_left(array, index): 
     count = 0
@@ -66,6 +65,5 @@ for i in range(1, len(lines) - 1):
         mult = left * right * top * bottom
         if mult > maximum:
             maximum = mult
-
 
 print(maximum)
